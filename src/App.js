@@ -7,7 +7,7 @@ function App() {
   const [records, setRecords] = useState([])
 
   useEffect(() => {
-    fetch('https://ikhwannaufal.github.io/table-json/Data.json')
+    fetch('Data.json')
     .then(res => res.json())
     .then(data => {
       setColumn(Object.keys(data.users[0]))
