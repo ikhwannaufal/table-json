@@ -7,7 +7,7 @@ function App() {
   const [records, setRecords] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/Data.json')
+    fetch('https://phenomenal-clafoutis-123631.netlify.app/Data.json')
     .then(res => res.json())
     .then(data => {
       setColumn(Object.keys(data.users[0]))
